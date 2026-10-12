@@ -27,22 +27,22 @@ class starter {
 		String role = A.nextLine();
 
 
-		if(role.equals("Wizard") || role.equals("wizard") || role.equals("1")){
+		if(role.equals("Wizard") || role.equals("wizard")){
 			System.out.println("your now a wizard");
 		}
 
-		else if(role.equals("Warrior") || role.equals("warrior") || role.equals("2")){
+		else if(role.equals("Warrior") || role.equals("warrior")){
 			System.out.println("your now a warrior");
 		}
 
-		else if(role.equals("Rouge") || role.equals("rouge") || role.equals("3")){
+		else if(role.equals("Rouge") || role.equals("rouge")){
 			System.out.println("your now a rouge");
 		}
 
 		else{
 			System.out.println("thats not a class");
 			System.out.println("please input a valid class");
-			String role = A.nextLine();
+			role = A.nextLine();
 		}
 			
 		System.out.println("You hava 20 points to spend on your stats, with a max of 10 per stat");
@@ -58,8 +58,9 @@ class starter {
 			strength = A.nextInt();
 		}
 			int stat1 = (20 - strength);
+			if((stat1 >= 0) && (stat1 <= 20)){
 			System.out.println(stat1 + " points remaining");
-
+			}
 			if(!((stat1 >=0) && (stat1 <= 20))){
 				System.out.println("You cant use that may points");
 				System.out.println("please give a valid value");
@@ -68,9 +69,10 @@ class starter {
 				strength = A.nextInt();
 
 				stat1 = (20 - strength);
+				if((stat1 >= 0) && (stat1 <= 20)){
 				System.out.println(stat1 + " points remaining");
 			}
-
+			}
 			System.out.println("what is your Dexterity (0-10)");
 			int dexterity = A.nextInt();
 
@@ -84,8 +86,9 @@ class starter {
 			}
 
 				int stat2 = (stat1 - dexterity);
-				System.out.println(stat2 + " points remaining");
-
+				if((stat2 >= 0) && (stat2 <= stat1)){
+						    System.out.println(stat2 + " points remaining");
+				}
 				if(!((stat2 >=0) && (stat2 <= stat1))){
 					System.out.println("You cant use that may points");
 					System.out.println("please give a valid value");
@@ -94,7 +97,9 @@ class starter {
 					dexterity = A.nextInt();
 
 					stat2 = (stat1 - dexterity);
+					if((stat2 >= 0) && (stat2 <= stat1)){
 					System.out.println(stat2 + " points remaining");
+					}
 
 				}
 
@@ -110,7 +115,9 @@ class starter {
 					}
 
 					int stat3 = (stat2 - intelligence);
+					if((stat3 >= 0) && (stat3 <= stat2)){
 					System.out.println(stat3 + " points remaining");
+					}
 
 					if(!((stat3 >=0) && (stat3 <= stat2))){
 						System.out.println("You cant use that may points");
@@ -120,7 +127,10 @@ class starter {
 						intelligence = A.nextInt();
 
 						stat3 = (stat2 - intelligence);
+						if((stat3 >= 0) && (stat3 <= stat2)){
 						System.out.println(stat3 + " points remaining");
+						}
+						
 					}
 
 					System.out.println("what is your Charisma (0-10)");
@@ -135,7 +145,9 @@ class starter {
 					}
 
 						int stat4 = (stat3 - intelligence);
+						if((stat4 >= 0) && (stat4 <= stat3)){
 						System.out.println(stat4 + " points remaining");
+						}
 
 						if(!((stat4 >=0) && (stat4 <= stat3))){
 							System.out.println("You cant use that may points");
@@ -145,7 +157,9 @@ class starter {
 							charisma = A.nextInt();
 
 							stat4 = (stat3 - intelligence);
-							System.out.println(stat4 + " points remaining");
+							if((stat4 >= 0) && (stat4 <= stat3)){
+						    System.out.println(stat4 + " points remaining");
+						}
 						}		
 
 						System.out.println("your name is " + name);
@@ -155,7 +169,7 @@ class starter {
 						System.out.println("your dexterity is " + dexterity);
 						System.out.println("your intelligence is " + intelligence);
 						System.out.println("your carisma is " + charisma);
-		}
+		
 	}
 }					
 
