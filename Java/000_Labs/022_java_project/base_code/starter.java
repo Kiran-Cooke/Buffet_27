@@ -10,6 +10,7 @@ class starter {
 	public static void main(String args[]) {
 
 		System.out.println("would you like to start");
+		Scanner sc = new Scanner(System.in);
 		
 
 
