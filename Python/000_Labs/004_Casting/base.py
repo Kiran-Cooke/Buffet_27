@@ -1,0 +1,7 @@
+x = int(4)
+y = int(2)
+z = int(x*y)
+print("4 times 2 = " + str(z))
+print(" the first # is:" + str(x))
+print(" the second # is:" + str(y))
+print(" the total # is:" + str(z))
