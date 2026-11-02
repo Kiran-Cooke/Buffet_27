@@ -1,0 +1,16 @@
+a=input("give me a weird noun ")
+b=input("give me a verb ending in -ing ")
+c=input("give me a silly adjective ")
+d=input("give me a the name of a food ")
+e=input("give me a quantity ")
+f=input("give me a famous person ")
+g=input("give me a funky noise ")
+
+
+print("")
+print("there was once a adventurer named "+f+".")
+print(f+" was not any ordinary adventurer, they were a "+c+" one.")
+print("one of their adventures "+f+" was "+b+" in the forrest.")
+print(f+" could smell "+d+" in the distance")
+print(f+" saw "+a+" in the distance with "+e+" "+d)
+print(f+" exclamed "+g+", "+g+", "+g )
